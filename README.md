@@ -1,95 +1,35 @@
-## Instructions
-Please stick to the following instructions on how to submit your application:
-1. Read the whole README
-2. Fork our repository
-3. Add your solution **with all requirements** to your repository
-4. Create a pull request to our repository
+## Implementation Information
 
-Additional Information to submit a successful application:
-- You have to create a pull request with your solution to **this** repository
-- Only an application with all requirements can be considered
-- Copied structures or code from other pull requests will be completely ignored
+I used typescript, sass class modules, hooks, redux/toolkit, useQuery and flexbox as tools or methodologies to implement features. I also integrated eslint and prettier.
 
-Also note down in the end how many hours it took to complete (roughly). **Please do not spend much more than 6 hours for the whole task.** This is not a hard limitation but want to respect your time since we cannot hire every applicant.
+## Available Scripts
 
-Thank you very much!
+In the project directory, you can run:
 
-## Main Task
-You are developing a new dashboard. Your task is to create a new dashboard with which you will be displaying and editing product information following
+### `npm install`
 
-First you have to setup the main dashboard with the main structure:
-- Header with [Innoloft Logo](https://img.innoloft.de/logo.svg)
-- Navigation
-  - Main Page
-  - Product
+Installs all dependencies for the project
 
-This structure will be the same on all pages
+### `npm start`
 
-It's not required that the main page has any content. **But it should be the default page on the root path `/`.**
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Product Page (`/product`)
-- Product image
-- Product main info should contain
-  - title
-  - type
-- 2 tab buttons to switch/change the tab content
-  - Description
-  - Attributes
-- Description tab should contain product description
-- Attributes tab should contain:
-  - categories (name only, free text input when adding/editing)
-  - business models (name only, free text input when adding/editing)
-  - [TRL](https://en.wikipedia.org/wiki/Technology_readiness_level) (single choice field)
-- User info should contain:
-  - user image
-  - user name
-  - user company name
-- Map should display company address on Google maps
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-For editing follow WYSIWYG methodology. When saving the product a PUT request has to be made to the API. Please keep in mind that the API itself **will not save your request**.
-### Example Mockup
-![mockup](mockup.jpg)
+### `npm run eslint`
 
-## White-Labeling
-In this step you will have to apply different configurations to the dashboard. Here you will have to add environment variables (f.e. with a `.env` file). Depending on the `APP_ID` environment variable. If **no** `.env` file is given, make sure to add a fallback to `APP_ID=1`.
-A configuration will look like that:
-```json
-{
-    "id": 1,
-    "logo": "img.innoloft.de/logo.svg",
-    "mainColor": "#272e71",
-    "hasUserSection": true
-}
-```
-With the api call `/configuration/:appId/` you get the configuration for your `APP_ID`. Possible appIds are `1` and `2`.
-* In case `hasUserSection: false` - hide the user info section on the right.
-* Apply main color to header and other elements to your taste
+Runs lint against the project directory
 
-## API
-In the task you will need to fetch some data from an API. The API base url is `https://api-test.innoloft.com`.  
-Please use **exactly** these endpoints.
-- Product
-  - GET `/product/6781/`
-  - PUT `/product/6781/`
-- TRL List
-  - GET `/trl/`
-- APP Configuration
-  - GET `/configuration/:appId/`
+### `npm run lint:fix`
 
-You can also download the [Postman collections](https://api-test.innoloft.com/postman_collection.json).
+Fixes lint errors in project directory
 
-## Technical Requirements
+### `npm run prettier`
 
-The application should at the very least use the following:
+Runs prettier in the project directory.
 
-- React.js framework
-- Redux
-- CSS
-  - Your own CSS structure
-  - **Do not** use any CSS frameworks (f.e. Bootstrap)
-  - A CSS pre-compiler (SASS, LESS, SCSS) or other CSS approaches (CSS modules, Styled components)
-- The dashboard should be responsive. It should **be usable on mobile and tablets**. There are no mockups for mobile and table views, adapt it to your taste.
-- (Optional) Linter
-- (Optional) Prettier
+### Time span
 
-When styling, you can decide for yourself what this dashboard should look like (even the structure-wise), make it look as nice as you can.
+It a total of 8 hours to complete the project. (I actually enjoyed working on it)

@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.container {
+  flex: 1;
+  min-width: 350px;
+  background-color: $white;
+  margin: 15px 15px 0;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position-x: center;
+}

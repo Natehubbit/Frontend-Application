@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.container {
+  button {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+    height: 100%;
+    padding: 5px;
+  }
+  input {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .body {
+    min-height: 100vh;
+    display: flex;
+
+    .content {
+      background-color: rgba($border, 0.04);
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

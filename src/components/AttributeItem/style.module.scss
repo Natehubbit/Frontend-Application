@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.container {
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba($color: $primary, $alpha: 0.1);
+  .head {
+    display: flex;
+    align-items: center;
+    h3 {
+      width: 100%;
+    }
+  }
+
+  .input {
+    margin-bottom: 5px;
+    padding-left: 0;
+    padding: 5px;
+    display: flex;
+    input {
+      margin-bottom: 5px;
+      padding: 5px;
+    }
+  }
+
+  ul {
+    li {
+      margin-bottom: 10px;
+    }
+    textarea {
+      width: 50%;
+      height: 100px;
+    }
+    button {
+      background-color: $primary;
+      color: $white;
+      border-color: $primary;
+      cursor: pointer;
+      padding: 5px;
+    }
+    padding-left: 17px;
+    margin-bottom: 10px;
+  }
+}
